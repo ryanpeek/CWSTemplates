@@ -83,7 +83,7 @@ $if(keywords)$
 $endif$
 $if(colorlinks)$
             colorlinks=true,
-            linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$Blue$endif$,
             citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
             urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
 $else$
@@ -211,7 +211,7 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 
-%% MONASH STUFF
+%% CWS STUFF
 
 %% CAPTIONS
 \RequirePackage{caption}
@@ -266,9 +266,9 @@ $endif$
 
 %% SECTION TITLES
 \RequirePackage[compact,sf,bf]{titlesec}
-\titleformat*{\section}{\Large\sf\bfseries\color[rgb]{0.7,0,0}}
-\titleformat*{\subsection}{\large\sf\bfseries\color[rgb]{0.7,0,0}}
-\titleformat*{\subsubsection}{\sf\bfseries\color[rgb]{0.7,0,0}}
+\titleformat*{\section}{\Large\sf\bfseries\color[rgb]{0.03, 0.27, 0.49}}
+\titleformat*{\subsection}{\large\sf\bfseries\color[rgb]{0.03, 0.27, 0.49}}
+\titleformat*{\subsubsection}{\sf\bfseries\color[rgb]{0.03, 0.27, 0.49}}
 \titlespacing{\section}{0pt}{2ex}{.5ex}
 \titlespacing{\subsection}{0pt}{1.5ex}{0ex}
 \titlespacing{\subsubsection}{0pt}{.5ex}{0ex}
@@ -294,7 +294,9 @@ $endif$
 
 %% HYPERLINKS
 \RequirePackage{xcolor} % Needed for links
-\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{cerulean}{rgb}{0.0, 0.48, 0.65}
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
 \RequirePackage{url}
 
 \makeatletter
@@ -302,12 +304,13 @@ $endif$
 \makeatother
 \hypersetup{
      citecolor=0 0 0,
+     hidelinks=true,
      breaklinks=true,
      bookmarksopen=true,
      bookmarksnumbered=true,
-     linkcolor=darkblue,
-     urlcolor=blue,
-     citecolor=darkblue,
+     linkcolor=darkcerulean,
+     urlcolor=darkcerulean,
+     citecolor=darkcerulean,
      colorlinks=true}
 
 \usepackage[showonlyrefs]{mathtools}
@@ -378,24 +381,23 @@ $endif$
 $if(department)$
   \def\name{$department$}
 $else$
-  \def\name{Department of \hbox{Econometrics \&} \hbox{Business Statistics}}
+  \def\name{Center for \hbox{Watershed} \hbox{Sciences}}
 $endif$
 
 $if(phone)$
   \telephone{$phone$}
 $else$
-  \telephone{(03) 9905 2478}
+  \telephone{530.754.9133}
 $endif$
 
 $if(email)$
   \email{$email$}
 $else$
-  \email{BusEco-Econometrics@monash.edu}
+  \email{rapeek@ucdavis.edu}
 $endif$
 
-\def\webaddress{\url{http://buseco.monash.edu/ebs/consulting/}}
-\def\abn{12 377 614 012}
-\def\logo{\includegraphics[width=6cm]{MBSportrait}}
+\def\webaddress{\url{https://watershed.ucdavis.edu/}}
+\def\logo{\includegraphics[width=6cm]{CWSAltDesign}}
 \def\extraspace{\vspace*{1.6cm}}
 \makeatletter
 \def\contactdetails{\faicon{phone} & \@telephone \\
@@ -423,8 +425,6 @@ $endif$
       \tabcolsep=0.12cm\sf\small
       \begin{tabular}{@{}ll@{}}\contactdetails
       \end{tabular}
-      \vspace*{0.3cm}\par
-      ABN: \abn\par
     }
   }\vss}\hss}
   \hspace*{0.2cm}
@@ -432,7 +432,7 @@ $endif$
   \hbox to 10cm{\vbox to 14cm{\vbox to 25cm{
       \vspace*{3cm}\sf\raggedright
       \parbox{11cm}{\sf\raggedright\baselineskip=1.2cm
-         \fontsize{24.88}{30}\color[rgb]{0.70,0.00,0.00}\sf\textbf{#1}}
+         \fontsize{24.88}{30}\color[rgb]{0, 0, 0}\sf\textbf{#1}}
       \par
       \vfill
       \large

@@ -11,13 +11,13 @@ author:
   othernames: Genghis
   title: Mr
   qualifications: BA, BComm, BCompSci, BLaw
-department: Department of\newline Econometrics &\newline Business Statistics
-organization: Acme Corporation
+department: Center for\newline Watershed Sciences
+organization: UC Davis
 bibliography: references.bib
 biblio-style: authoryear-comp
 linestretch: 1.5
 output:
-  MonashEBSTemplates::report:
+  CWSTemplates::report:
     fig_caption: yes
     fig_height: 5
     fig_width: 8

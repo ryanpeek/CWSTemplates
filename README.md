@@ -1,19 +1,14 @@
-# monash
+# CWS
 
-This package provides Rmarkdown templates for use at Monash University, Department of Econometrics & Business Statistics.
+This package provides Rmarkdown templates for use at Center for Watershed Sciences, UC Davis. It is a work in progress and has been adapted (largely copied) from [MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates) written by Rob Hyndman.
 
-It contains
+It contains:
 
- * Monash EBS working paper template
- * Monash letter template
- * Monash exam template
- * Monash consulting report template
- * Monash beamer slides (for the Monash Business School)
- * Memo template (nothing to do with Monash, but a nice format)
+ * ~~CWS working paper template~~ (*in progress*)
+ * CWS letter template
+ * ~~CWS exam template~~
+ * CWS consulting report template
+ * ~~CWS beamer slides~~
+ * ~~CWS Memo template~~ 
 
-The `slides()` function is actually a wrapper to use the `monash` template in the [`binb`](https://github.com/eddelbuettel/binb) package.
 
-There are also Monash thesis templates available:
-
- * PhD thesis template: https://github.com/robjhyndman/MonashThesis
- * Honours thesis template: https://github.com/robjhyndman/MonashHonoursThesis
